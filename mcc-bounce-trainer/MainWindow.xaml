@@ -1,0 +1,36 @@
+﻿<Window x:Class="MccBounceTrainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MccBounceTrainer"
+        mc:Ignorable="d"
+        Title="Halo 2 MCC Bounce Trainer" Height="281" Width="336" ResizeMode="CanMinimize">
+    <Grid>
+        <StackPanel>
+
+            <GroupBox Name="TickrateGroupbox" Header="Tickrate - Toggle 30/60" HorizontalAlignment="Left" Margin="10,10,0,0" Width="300">
+                <StackPanel>
+                    <CheckBox Name="TickrateEnabledCheckBox" Content="Enabled" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <Label Content="Hotkey" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="TickrateHotkey1ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,0,0,0"/>
+                        <ComboBox Name="TickrateHotkey2ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Name="WireframeGroupbox" Header="Wireframe - Toggle on/off" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300">
+                <StackPanel>
+                    <CheckBox Name="WireframeEnabledCheckBox" Content="Enabled" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <Label Content="Hotkey" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="WireframeHotkey1ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,0,0,0"/>
+                        <ComboBox Name="WireframeHotkey2ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,0,0,0"/>
+
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>
